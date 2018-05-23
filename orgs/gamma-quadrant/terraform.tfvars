@@ -4,7 +4,7 @@ terragrunt {
 
     config {
       profile        = "gamma-quadrant"
-      bucket         = "org-x-global-terraform-state"
+      bucket         = "gamma-quadrant-global-terraform-state"
       region         = "us-west-2"
       dynamodb_table = "terraform-locks"
       key            = "${path_relative_to_include()}/terraform.tfstate"
