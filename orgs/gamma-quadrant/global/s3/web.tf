@@ -1,5 +1,5 @@
-resource "aws_s3_bucket" "web" {
-  bucket = "${var.org_name}-${var.aws_region}-${var.environment}-gammaquadrant.io"
+resource "aws_s3_bucket" "self" {
+  bucket = "gammaquadrant.io"
   acl    = "public-read"
 
   website {
